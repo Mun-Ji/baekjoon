@@ -1,8 +1,10 @@
 N=int(input())
-if N==1:
-    print(1)
-elif N!=1:
-    n=1
-    while not N <= 1+3*(n**2)+3*n:
-        n+=1
-    print(n+1)
+a=1
+b=7
+count=0
+while not a < N <= b:
+    count+=1
+    a+=count*6
+    b+=(count+1)*6
+ans = count + 2
+print(ans)
